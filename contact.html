@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Star Organic Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            margin-top: 70px;
+        }
+        .contact-card {
+            border: none;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+            border-radius: 1rem;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Star Organic Farm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Carousel -->
+    <section class="pt-0" style="margin-top:56px;">
+        <div id="contactCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Contact Us">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-5 fw-bold">Contact Us</h1>
+                        <p class="lead">We're here to help you with your organic journey.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80" class="d-block w-100" style="height: 300px; object-fit: cover;" alt="Support">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-5 fw-bold">Get in Touch</h1>
+                        <p class="lead">Reach out for support, feedback, or partnership inquiries.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#contactCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#contactCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    <section class="container contact-section py-5">
+        <h1 class="text-center mb-5 fw-bold">Contact Us</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card contact-card p-4 mb-4">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-lg" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-success btn-lg px-5">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info p-4 text-center">
+                    <h5 class="mb-3">Or reach us directly:</h5>
+                    <p class="mb-1"><i class="bi bi-envelope-fill text-success"></i> support@starorganicfarm.com</p>
+                    <p><i class="bi bi-telephone-fill text-success"></i> (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4 mt-0">
+        <div class="container text-center">
+            <p>© 2025 Star Organic Farm. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

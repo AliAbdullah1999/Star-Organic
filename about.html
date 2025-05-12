@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Star Organic Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-about {
+            background: linear-gradient(rgba(25,135,84,0.4),rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            color: #e6ffe6;
+            padding: 100px 0 60px 0;
+            text-align: center;
+        }
+        .about-values .card {
+            border: none;
+            background: #181f18;
+            color: #e6ffe6;
+            box-shadow: 0 2px 16px rgba(25,135,84,0.07);
+            transition: transform 0.2s;
+        }
+        .about-values .card:hover {
+            transform: translateY(-5px) scale(1.03);
+            border-color: #198754;
+        }
+        .about-values .fs-1.text-success {
+            color: #198754 !important;
+        }
+        .team-avatar {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #198754;
+        }
+        .card.border-0.shadow-sm {
+            background: #181f18;
+            color: #e6ffe6;
+        }
+        .bg-success {
+            background: #198754 !important;
+        }
+        .btn-light {
+            background: #e6ffe6 !important;
+            color: #198754 !important;
+            border: none;
+        }
+        .btn-light:hover {
+            background: #198754 !important;
+            color: #fff !important;
+        }
+        .carousel-caption {
+            background: rgba(0,0,0,0.6);
+            border-radius: 1rem;
+        }
+        .carousel-overlay {
+            background: rgba(0,0,0,0.5);
+        }
+        .navbar,
+        .navbar-light.bg-light {
+            background: #111 !important;
+            border-bottom: 2px solid #198754;
+        }
+        .navbar .navbar-brand,
+        .navbar .nav-link,
+        .navbar .nav-link.active {
+            color: #e6ffe6 !important;
+        }
+        .navbar .nav-link.active,
+        .navbar .nav-link:hover {
+            color: #198754 !important;
+            font-weight: bold;
+        }
+        .footer, footer.bg-dark {
+            background: #111 !important;
+            color: #e6ffe6 !important;
+        }
+        .footer a.text-white, footer a.text-white {
+            color: #198754 !important;
+        }
+        .footer a.text-white:hover, footer a.text-white:hover {
+            color: #fff !important;
+        }
+        body {
+            background: #111 !important;
+            color: #e6ffe6 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (unified) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Star Organic Farm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="pt-0" style="margin-top:56px;">
+        <div id="aboutCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="About Star Organic Farm">
+                    <div class="carousel-overlay position-absolute top-0 start-0 w-100 h-100" style="background:rgba(34,34,34,0.5);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold mb-3">About Star Organic Farm</h1>
+                        <p class="lead mb-4">Empowering healthy living with the freshest organic groceries, delivered to your door.</p>
+                        <a href="shop.html" class="btn btn-success btn-lg shadow">Shop Organic</a>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=1500&q=80" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Sustainability">
+                    <div class="carousel-overlay position-absolute top-0 start-0 w-100 h-100" style="background:rgba(34,34,34,0.5);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold mb-3">Sustainability & Quality</h1>
+                        <p class="lead mb-4">Sustainability, transparency, and quality are at the heart of everything we do.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Company Values / Features -->
+    <section class="about-values py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">Why Choose Us?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="fs-1 text-success"><i class="bi bi-leaf"></i></span>
+                        </div>
+                        <h5 class="fw-bold">Certified Organic</h5>
+                        <p>All our products are sourced from certified organic farms and trusted local partners, ensuring the highest quality and safety.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="fs-1 text-success"><i class="bi bi-truck"></i></span>
+                        </div>
+                        <h5 class="fw-bold">Fast & Fresh Delivery</h5>
+                        <p>Next-day delivery for all orders placed before 5pm. Your groceries arrive fresh, every time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="fs-1 text-success"><i class="bi bi-people"></i></span>
+                        </div>
+                        <h5 class="fw-bold">Community Focused</h5>
+                        <p>We support local farmers and give back to our community through sustainable practices and partnerships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <h2 class="fw-bold">Meet Our Team</h2>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="CEO" class="team-avatar mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Alex Green</h5>
+                            <small class="text-muted">Founder & CEO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="COO" class="team-avatar mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Sara Fields</h5>
+                            <small class="text-muted">Chief Operations Officer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Head of Logistics" class="team-avatar mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Michael Brown</h5>
+                            <small class="text-muted">Head of Logistics</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer Success" class="team-avatar mx-auto mt-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Emily White</h5>
+                            <small class="text-muted">Customer Success Lead</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-success text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Ready to Eat Better?</h2>
+            <p class="lead mb-4">Join thousands of happy customers who trust Star Organic Farm for their healthy lifestyle.</p>
+            <a href="shop.html" class="btn btn-light btn-lg fw-bold">Start Shopping</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-0">
+        <div class="container text-center">
+            <div class="mb-2">
+                <a href="index.html#home" class="text-white me-3">Home</a>
+                <a href="shop.html" class="text-white me-3">Shop</a>
+                <a href="about.html" class="text-white me-3">About</a>
+                <a href="contact.html" class="text-white me-3">Contact</a>
+                <a href="recipes.html" class="text-white me-3">Recipes</a>
+                <a href="faq.html" class="text-white">FAQ</a>
+            </div>
+            <p class="mb-0">© 2025 Star Organic Farm. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
